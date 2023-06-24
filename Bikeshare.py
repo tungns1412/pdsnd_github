@@ -162,11 +162,11 @@ def user_stats(df, city):
         gender = df['Gender'].value_counts()
         print('\nCount of Genders:\n', gender)
         earliest_year = df['Birth Year'].min()
-        print('\nEarliest Year:\n', earliest_year)
+        print('\nEarliest Year:\n', int(earliest_year))
         recent_year = df['Birth Year'].max()
-        print('\nMost Recent Year:\n', recent_year)
+        print('\nMost Recent Year:\n', int(recent_year))
         common_year = df['Birth Year'].mode()[0]
-        print('\nMost Common Year:\n', common_year)
+        print('\nMost Common Year:\n', int(common_year))
     else:
         print('\nThis dataset does not have Gender or Birth Year information\n')
 
