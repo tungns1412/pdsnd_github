@@ -16,6 +16,7 @@ The three city dataset files provided by Motivate, a bike share system provider 
 - new_york_city.csv
 - washington.csv
 
+Also a template (bikeshare.py file) with guidelines  was adapted to work in this project.
 
 ### Credits
 [Udacity course of Programming for Data Science with Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104)
