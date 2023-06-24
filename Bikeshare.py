@@ -101,7 +101,7 @@ def time_stats(df):
     print("The most common hour: ", popular_hour)
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
 
 def station_stats(df):
@@ -125,7 +125,7 @@ def station_stats(df):
     print("The most combined trip: ", popular_combined_trip)
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
     
 def trip_duration_stats(df):
@@ -136,14 +136,14 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print("Total travel time: ", total_travel_time)
+    print("Total travel time: ", round(total_travel_time, 2))
 
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print("Mean travel time: ", mean_travel_time)
+    print("Mean travel time: ", round(mean_travel_time, 2))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
     
 def user_stats(df, city):
@@ -170,7 +170,7 @@ def user_stats(df, city):
     else:
         print('\nThis dataset does not have Gender or Birth Year information\n')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % round((time.time() - start_time), 2))
     print('-'*40)
     
 def main():
